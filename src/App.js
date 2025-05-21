@@ -27,11 +27,11 @@
 // App.js
 import React from 'react';
 import PortfolioForm from './PortfolioForm';
-
+import Form from './Form';
 function App() {
   return (
-    <div>
-      <PortfolioForm />
+    <div style={{ maxWidth: '900px', margin: 'auto', padding: '30px' }}>
+      <Form />
     </div>
   );
 }
