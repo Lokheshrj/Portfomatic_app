@@ -35,7 +35,7 @@ export default function PortfolioForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://127.0.0.1:8000/api/portfolio/', formData);
+            const res = await axios.post('http://127.0.0.1:8000/portfolio/', formData);
             setMessage(res.data.message);
         } catch (error) {
             setMessage(error.response?.data?.error || "Something went wrong");
